@@ -1,0 +1,282 @@
+body {
+  background-color: #0d47a1;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+span {
+  display: block; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #fbe9e7;
+  color: white; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  outline: 1px solid #fbe9e7; }
+
+::-webkit-scrollbar-corner, ::-webkit-resizer, ::-webkit-scrollbar-button {
+  display: none; }
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.titleProj {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh; }
+
+.imgCard {
+  margin-bottom: -10vh; }
+
+.leftSection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 150vh;
+  max-height: 1200px;
+  width: 30%;
+  background-color: #64b5f6; }
+  .leftSection .leftTop {
+    border-bottom: 4px solid white; }
+  .leftSection .leftSpacers {
+    color: white;
+    width: 100%;
+    border-bottom: 4px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .leftSection .leftSpacers div {
+      width: 90%;
+      margin: 0 auto; }
+    .leftSection .leftSpacers a {
+      color: #FFFFFF; }
+
+.rightSection {
+  background-color: #64b5f6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 68%;
+  max-height: 1200px;
+  height: 150vh; }
+  .rightSection .firstRight {
+    max-height: 1500px;
+    height: 100%;
+    overflow-y: scroll; }
+    .rightSection .firstRight h1 {
+      width: 100%;
+      margin: 0 auto; }
+    .rightSection .firstRight .imgCard {
+      width: 100%;
+      height: 45%; }
+    .rightSection .firstRight .img1 {
+      margin-top: 5%; }
+  .rightSection .card-content {
+    background-color: black;
+    color: white; }
+  .rightSection h1 {
+    font-weight: 100;
+    margin: 0 auto;
+    color: white; }
+
+.mePic {
+  width: 100%;
+  background-color: #e74c3c; }
+  .mePic p {
+    font-weight: 100;
+    font-size: 1.2em; }
+  .mePic .card {
+    background-color: #e74c3c; }
+  .mePic img {
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+    width: auto; }
+
+.contact i {
+  color: #f1c40f; }
+.contact a {
+  color: white; }
+.contact a:hover, .contact a:active, .contact a:link {
+  color: #FFFFFF; }
+
+.skillSet {
+  word-spacing: 4px; }
+
+.aboutMe,
+.skillSet,
+.contact,
+.skillSet {
+  margin: 0 auto;
+  color: white;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+#projTitle {
+  font-weight: 200; }
+
+.modal {
+  background-color: #e3f2fd; }
+  .modal a, .modal .modal-footer {
+    background-color: #e3f2fd; }
+  .modal #workXP {
+    font-weight: 100; }
+  .modal .resumeBreak {
+    border-bottom: 2px solid black;
+    margin-bottom: 2vh; }
+
+.resumeImg {
+  width: 125%; }
+
+.imgFlexContain {
+  width: 70%;
+  margin: 0 auto; }
+  .imgFlexContain .modalImg {
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; }
+
+#modal1 {
+  color: black; }
+
+.resumeCard {
+  background-color: black;
+  color: black; }
+  .resumeCard h1 {
+    font-weight: 100;
+    color: white;
+    display: block;
+    margin: 0 auto; }
+  .resumeCard h5 {
+    font-weight: 200; }
+  .resumeCard .textLang {
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+    padding-bottom: 45px;
+    padding-top: 20px; }
+  .resumeCard #finalRes {
+    padding: none;
+    border-bottom: none; }
+
+@media screen and (max-width: 519px) and (min-width: 320px) and (orientation: portrait) {
+  .leftSection, .rightSection {
+    width: 100%;
+    height: 100%;
+    max-height: none; }
+
+  .imgCard {
+    margin-bottom: 1vh; } }
+@media screen and (max-width: 519px) and (min-width: 320px) and (orientation: landscape) {
+  .leftSection, .rightSection {
+    width: 100%;
+    height: 100%;
+    max-height: none; }
+
+  .imgFlexContain {
+    width: 80%;
+    margin: 0 auto; }
+
+  .imgCard {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 10vh; } }
+@media screen and (min-width: 520px) and (max-width: 780px) and (orientation: portrait) {
+  .imgFlexContain {
+    width: 90%;
+    margin: 0 auto; }
+
+  .firstLeft {
+    width: 100%;
+    margin: 0 auto; }
+
+  .firstRight {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    .firstRight h1 {
+      width: 80%;
+      margin: 0 auto; }
+    .firstRight .imgCard {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: -15vh; }
+
+  .leftSection {
+    width: 38%; }
+
+  .rightSection {
+    width: 60%; } }
+@media screen and (min-width: 520px) and (max-width: 780px) and (orientation: landscape) {
+  .leftSection, .rightSection {
+    width: 100%;
+    height: 100%;
+    max-height: none; }
+
+  .imgFlexContain {
+    width: 50%;
+    margin: 0 auto; }
+
+  .imgCard {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5vh; } }
+@media screen and (max-width: 1199px) and (min-width: 781px) {
+  .imgFlexContain {
+    width: 80%;
+    margin: 0 auto; }
+
+  .leftSection {
+    width: 35%; }
+
+  .rightSection {
+    width: 60%; }
+
+  .firstLeft {
+    width: 100%;
+    margin: 0 auto; }
+
+  .firstRight {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    overflow-y: scroll; }
+    .firstRight h1 {
+      width: 80%;
+      margin: 0 auto; }
+    .firstRight .imgCard {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: -20vh; } }
+
+/*# sourceMappingURL=index.css.map */
